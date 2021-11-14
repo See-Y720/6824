@@ -24,6 +24,6 @@ func main() {
 	for m.Done() == false {
 		time.Sleep(time.Second)
 	}
-
+	m.Wg.Wait()
 	time.Sleep(time.Second)
 }
